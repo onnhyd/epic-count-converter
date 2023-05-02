@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+/* .body{
+    background-color: rgb(201, 143, 56);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+} */
+.content-wrapper{
+    background-color: rgb(226, 218, 196);
+    
+    font-family: 'Red Hat Display', sans-serif;
+    /* background-color:rgb(100, 182, 182); */
+    border-radius:20px;
+    /* margin: 20px;
+    padding: 20px; */
+    /* background-color: rgb(149,86,55); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.form-wrapper{
+    padding: 20px;
+    margin-bottom: 50px;
+    
+    background-color: rgb(149,86,55);
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: blueviolet; */
+    width: 110vh;
+    
+    font-size: 30px;
+      /* display: flex;  */
+     /* align-items: center;  */
+    border-radius:20px;
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+    filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1)); */
+}
+.form-wrapper input{
+    background-color: rgb(148,131,86);
+    /* height:30px; */
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    
+    
+}
+.convert-button{
+    border:none;
+    /* background-color:aliceblue; */
+    background-color:  rgb(39,29,20);
+    /* width :90px; */
+    /* height:40px; */
+    border-radius: 30px;
+    font-size:30px;
+    color: white;  
+    padding: 15px;  
+}
+
+.convert-button-wrapper{
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    
+}
+/* .from-input-wrapper option{
+    background-color: black;
+    
+} */
+
+
+select {
+font-size: 30px;
+background-color: rgb(148,131,86);
+border-radius: 30px;
+padding-left: 80px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #333;
+}
+.form-wrapper:hover{
+    box-shadow: 
+    -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+}
+.convert-button:hover{
+cursor: pointer;
+box-shadow: 
+    -1px -1px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);  
+}
+#output{
+    margin-left: 150px;
+    /* padding-left: 80px; */
+}
+.form-wrapper input:hover{
+    cursor: pointer;
+}
+select:hover{
+    cursor: pointer;
+}

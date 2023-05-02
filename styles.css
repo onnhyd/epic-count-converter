@@ -94,10 +94,13 @@ box-shadow:
     -1px -1px 15px rgba(255,255,255,0.5),
     10px 10px 15px rgba(70,70,70,0.12);  
 }
-/* #output{
-    margin-left: 150px;
-    padding-left: 80px;
-} */
+#output{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 150px;
+    padding-left: 80px; */
+}
 .form-wrapper input:hover{
     cursor: pointer;
 }

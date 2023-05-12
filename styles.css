@@ -6,7 +6,7 @@
     justify-content:space-around;
 } */
 .content-wrapper{
-    background-color: rgb(226, 218, 196);
+    background-color: rgb(255, 255, 255);
     
     font-family: 'Red Hat Display', sans-serif;
     /* background-color:rgb(100, 182, 182); */
@@ -22,13 +22,18 @@
 .form-wrapper{
     padding: 20px;
     margin-bottom: 50px;
-    
-    background-color: rgb(149,86,55);
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.41);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+    /* background-color: rgb(149,86,55); */
     /* background-color: rgb(255, 255, 255); */
     /* background-color: blueviolet; */
-    width: 110vh;
+    width: 70vh;
     
-    font-size: 30px;
+    font-size: 20px;
       /* display: flex;  */
      /* align-items: center;  */
     border-radius:20px;
@@ -40,27 +45,31 @@
     filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1)); */
 }
 .form-wrapper input{
-    background-color: rgb(148,131,86);
+    
+    /* background-color: rgb(148,131,86); */
     /* height:30px; */
-    padding: 15px;
+    padding: 10px;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 15px;
     
     
 }
 .convert-button{
     border:none;
     /* background-color:aliceblue; */
-    background-color:  rgb(39,29,20);
+    /* background-color:  rgb(39,29,20); */
+    background-color: #017afe;
+    width: 55vh;
     /* width :90px; */
     /* height:40px; */
-    border-radius: 30px;
-    font-size:30px;
+    border-radius: 10px;
+    font-size: 20px;
     color: white;  
-    padding: 15px;  
+    padding: 8px;  
 }
 
 .convert-button-wrapper{
+    padding-top: 20px;
     /* background-color: blue; */
     display: flex;
     /* align-items: center; */
@@ -75,17 +84,20 @@
 
 
 select {
-font-size: 30px;
-background-color: rgb(148,131,86);
+font-size: 15px;
+/* background-color: rgb(148,131,86); */
 border-radius: 30px;
-padding-left: 80px;
+padding-left: 50px;
+  
+
 padding-top: 10px;
 padding-bottom: 10px;
 color: #333;
 }
+
 .form-wrapper:hover{
     box-shadow: 
-    -10px -10px 15px rgba(255,255,255,0.5),
+    -10px -10px 15px rgba(219, 205, 205, 0.5),
     10px 10px 15px rgba(70,70,70,0.12);
 }
 .convert-button:hover{

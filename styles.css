@@ -41,6 +41,8 @@
     /* background-color: rgb(148,131,86); */
     /* height:30px; */
     padding: 10px;
+    padding-left: 80px;
+    padding-right: 40px;
     border-radius: 30px;
     font-size: 15px;
     
@@ -79,7 +81,8 @@ select {
 font-size: 15px;
 /* background-color: rgb(148,131,86); */
 border-radius: 30px;
-padding-left: 50px;
+padding-left: 100px;
+padding-right: 50px;
   
 
 padding-top: 10px;

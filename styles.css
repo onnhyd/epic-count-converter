@@ -21,7 +21,7 @@
 }
 .form-wrapper{
     padding: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     /* From https://css.glass */
 background: rgba(255, 255, 255, 0.41);
 border-radius: 16px;
@@ -119,21 +119,16 @@ box-shadow:
 select:hover{
     cursor: pointer;
 }
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-    /* h1{
-        color: #20ad4a;
-        background-color: rgb(29, 221, 77);
-    } */
+@media(max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/    
     h1{
         font-size:25px;
+        color: green;
     }
     .form-wrapper{
-        font-size: 20px;
-        width: 40vh;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
+        /* font-size: 20px; */
+        font-size: 30px;
     }
+   
     
 }

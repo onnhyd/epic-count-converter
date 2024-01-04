@@ -5,6 +5,14 @@
     align-items: center;
     justify-content:space-around;
 } */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 .content-wrapper{
     background-color: rgb(255, 255, 255);
     /* background-color:#017afe; */
@@ -124,4 +132,22 @@ select:hover{
     }
    
     
+}
+nav {
+    background-color: #017afe;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }

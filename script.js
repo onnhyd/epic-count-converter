@@ -31,7 +31,7 @@ function convert() {
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Woollen Count";
     }
  
- else if (from == "denier" && to == "tex") {
+  else if (from == "denier" && to == "tex") {
         result = input * 0.111;
         document.getElementById("output").innerHTML = input + " Denier Count = " + result.toFixed(2) + " Tex Count";
     } else if (from == "denier" && to == "denier") {
@@ -57,7 +57,7 @@ function convert() {
         document.getElementById("output").innerHTML = input + " Denier Count = " + result.toFixed(2) + " Woollen Count";
     }
  
- else if (from == "grist" && to == "tex") {
+  else if (from == "grist" && to == "tex") {
         result = input * 34.45;
         document.getElementById("output").innerHTML = input + " Jute Count or Grist = " + result.toFixed(2) + " Tex Count";
     } else if (from == "grist" && to == "denier") {
@@ -109,33 +109,7 @@ function convert() {
         document.getElementById("output").innerHTML = input + " English Cotton Count = " + result.toFixed(2) + " Woollen Count";
     }
 
-   else if (from == "worsted" && to == "tex") {
-        result = 886 / input;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Tex Count";
-    } else if (from == "worsted" && to == "denier") {
-        result = 7972 / input;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Denier Count";
-    } else if (from == "worsted" && to == "grist") {
-        result = 25.71 / input;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Jute Count or Grist";
-    } else if (from == "worsted" && to == "cotton") {
-        result = input * 0.667;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " English Cotton Count";
-    } else if (from == "worsted" && to == "worsted") {
-        result = input * 1;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Worsted Count";
-    } else if (from == "worsted" && to == "metric") {
-        result = input * 1.129;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Metric Count";
-    } else if (from == "worsted" && to == "linen") {
-        result = input / 1.867;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Linen Count";
-    } else if (from == "worsted" && to == "woollen") {
-        result = input / 2.188;
-        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Woollen Count";
-    }
-
-   else if (from == "metric" && to == "tex") {
+  else if (from == "metric" && to == "tex") {
         result = 1000 / input;
         document.getElementById("output").innerHTML = input + " Metric Count = " + result.toFixed(2) + " Tex Count";
     } else if (from == "metric" && to == "denier") {
@@ -161,33 +135,7 @@ function convert() {
         document.getElementById("output").innerHTML = input + " Metric Count = " + result.toFixed(2) + " Woollen Count";
     }
 
-   else if (from == "linen" && to == "tex") {
-        result = 1654 / input;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Tex Count";
-    } else if (from == "linen" && to == "denier") {
-        result = 14880 / input;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Denier Count";
-    } else if (from == "linen" && to == "grist") {
-        result = 48 / input;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Jute Count or Grist";
-    } else if (from == "linen" && to == "cotton") {
-        result = input * 0.357;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " English Cotton Count";
-    } else if (from == "linen" && to == "worsted") {
-        result = input * 0.536;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Worsted Count";
-    } else if (from == "linen" && to == "metric") {
-        result = input * 0.605;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Metric Count";
-    } else if (from == "linen" && to == "linen") {
-        result = input * 1;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Linen Count";
-    } else if (from == "linen" && to == "woollen") {
-        result = input / 1.172;
-        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Woollen Count";
-    }
-
-   else if (from == "woollen" && to == "tex") {
+  else if (from == "woollen" && to == "tex") {
         result = 1938 / input;
         document.getElementById("output").innerHTML = input + " Woollen Count = " + result.toFixed(2) + " Tex Count";
     } else if (from == "woollen" && to == "denier") {
@@ -211,6 +159,58 @@ function convert() {
     } else if (from == "woollen" && to == "woollen") {
         result = input * 1;
         document.getElementById("output").innerHTML = input + " Woollen Count = " + result.toFixed(2) + " Woollen Count";
+    }
+
+  else if (from == "worsted" && to == "tex") {
+        result = 886 / input;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Tex Count";
+    } else if (from == "worsted" && to == "denier") {
+        result = 7972 / input;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Denier Count";
+    } else if (from == "worsted" && to == "grist") {
+        result = 25.71 / input;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Jute Count or Grist";
+    } else if (from == "worsted" && to == "cotton") {
+        result = input * 0.667;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " English Cotton Count";
+    } else if (from == "worsted" && to == "worsted") {
+        result = input * 1;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Worsted Count";
+    } else if (from == "worsted" && to == "metric") {
+        result = input * 1.129;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Metric Count";
+    } else if (from == "worsted" && to == "linen") {
+        result = input / 1.867;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Linen Count";
+    } else if (from == "worsted" && to == "woollen") {
+        result = input / 2.188;
+        document.getElementById("output").innerHTML = input + " Worsted Count = " + result.toFixed(2) + " Woollen Count";
+    }
+
+  else if (from == "linen" && to == "tex") {
+        result = 1654 / input;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Tex Count";
+    } else if (from == "linen" && to == "denier") {
+        result = 14880 / input;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Denier Count";
+    } else if (from == "linen" && to == "grist") {
+        result = 48 / input;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Jute Count or Grist";
+    } else if (from == "linen" && to == "cotton") {
+        result = input * 0.357;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " English Cotton Count";
+    } else if (from == "linen" && to == "worsted") {
+        result = input * 0.536;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Worsted Count";
+    } else if (from == "linen" && to == "metric") {
+        result = input * 0.605;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Metric Count";
+    } else if (from == "linen" && to == "linen") {
+        result = input * 1;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Linen Count";
+    } else if (from == "linen" && to == "woollen") {
+        result = input / 1.172;
+        document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Woollen Count";
     }
 
  else {

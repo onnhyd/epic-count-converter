@@ -6,42 +6,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-}
-
-.team-member {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #ddd;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 nav {
     background-color: #017afe;
     overflow: hidden;

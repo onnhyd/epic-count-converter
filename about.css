@@ -24,3 +24,44 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
+h1 {
+    color: #333;
+  }
+  
+  p {
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .developer {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .developer img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .thank-you {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }

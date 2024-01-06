@@ -2,15 +2,15 @@ function convert() {
     const input = document.getElementById("input").value;
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
-    
+
     let result;
-    
+
     if (from == "tex" && to == "tex") {
         result = input * 1;
-        document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Tex Count";
+        document.getElementById("output").innerHTML = `${input} Tex Count = ${result.toFixed(2)} Tex Count`;
     } else if (from == "tex" && to == "denier") {
         result = input * 9;
-        document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Denier Count";
+        document.getElementById("output").innerHTML = `${input} Tex Count = ${result.toFixed(2)} Denier Count`;
     } else if (from == "tex" && to == "grist") {
         result = input * 0.029;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Jute Count or Grist";
@@ -213,7 +213,24 @@ function convert() {
         document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Woollen Count";
     }
 
- else {
+    } else {
+        document.getElementById("output").innerHTML = "Invalid input. Please try again.";
+        return;
+    }
+
+    if (result !== undefined) {
+        document.getElementById("output").innerHTML = `${input} ${from} = ${result.toFixed(2)} ${to}`;
+    } else {
         document.getElementById("output").innerHTML = "Invalid input. Please try again.";
     }
+}
+
+document.getElementById("toggleButton").addEventListener("click", toggleDarkMode);
+
+function toggleDarkMode() {
+    const body = document.body;
+    const contentWrapper = document.querySelector(".content-wrapper");
+
+    body.classList.toggle("dark-mode");
+    contentWrapper.classList.toggle("dark-mode");
 }

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/imagesapple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Linear Density Converter</title>
-    <link rel="stylesheet" href="styles.css">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/imagesapple-touch-icon.png">
+		<link rel="manifest" href="/site.webmanifest">
+	<title>Linear Density Converter</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav id="nav">
-        <a href="./index.html">Home</a>
-        <a href="./conversion-table.html">Conversion Table</a>
-        <a href="./about.html">About</a>
-        <button id="toggleButton">Toggle Dark Mode</button>
-    </nav>
-    <div class="content-wrapper">
-        <h1>Linear Density Converter</h1>
-        <div class="form-wrapper">
-            <form>
-                <label for="input">Count: <br></label>
-                <input type="number" id="input" name="input"><br><br>
-                <div class="from-input-wrapper">
-                    <label class="from-input" for="from">Convert from: <br></label>
-                    <select id="from" name="from">
-                        <option value="tex">Tex Count</option>
+	<nav id="nav">
+		<a href="./index.html">Home</a>
+		<a href="./conversion-table.html">Conversion Table</a>
+		<a href="./about.html">About</a>			
+	</nav>
+	<div class="content-wrapper">
+		
+		<h1>Linear Density Converter</h1>
+		<div class="form-wrapper">
+			<form>
+				<label  for="input">Count: <br></label>
+				<input type="number" id="input" name="input"><br><br>
+				<div class="from-input-wrapper">
+					<label class="from-input" for="from">Convert from: <br></label>
+					<select id="from" name="from">
+					<option value="tex">Tex Count</option>
 					<option value="denier">Denier Count</option>
 					<option value="grist">Jute Count or Grist</option>
 					<option value="cotton">English Cotton Count</option>
@@ -35,13 +35,13 @@
 					<option value="woollen">Woollen Count</option>
 					<option value="worsted">Worsted Count</option>
 					<option value="linen">Linen Count</option>
-                    </select><br><br>
-                </div>
-
-                <div class="to-input-wrapper">
-                    <label class="to-input" for="to">Convert to: <br></label>
-                    <select id="to" name="to">
-               <option value="tex">Tex Count</option>
+					</select><br><br>
+				</div>
+				
+				<div class="to-input-wrapper">
+					<label class="to-input" for="to">Convert to: <br></label>
+					<select id="to" name="to">
+					<option value="tex">Tex Count</option>
 					<option value="denier">Denier Count</option>
 					<option value="grist">Jute Count or Grist</option>
 					<option value="cotton">English Cotton Count</option>
@@ -49,15 +49,17 @@
 					<option value="woollen">Woollen Count</option>
 					<option value="worsted">Worsted Count</option>
 					<option value="linen">Linen Count</option>
-                    </select><br><br>
-                </div>
-                <div class="convert-button-wrapper">
-                    <button class="convert-button" type="button" onclick="convert()">Convert</button>
-                </div>
-            </form><br><br>
-            <p id="output"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+					</select><br><br>
+				</div>
+				<div class="convert-button-wrapper">
+					<button class="convert-button" type="button" onclick="convert()">Convert</button>
+				</div>
+			</form><br><br>
+			<p id="output"></p>
+		</div>
+		
+		
+	</div>	
+	<script src="script.js"></script>
 </body>
 </html>

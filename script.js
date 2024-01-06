@@ -2,7 +2,12 @@ function convert() {
     const input = document.getElementById("input").value;
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
-    
+
+    if (input === "") {
+        console.log("No input value received.");
+        return;
+        }
+
     let result;
     
     if (from == "tex" && to == "tex") {

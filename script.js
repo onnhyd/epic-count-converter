@@ -8,23 +8,10 @@ function convert() {
     if (from == "tex" && to == "tex") {
         result = input * 1;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Tex Count";
-    }
-    else if (from === "tex" && to === "denier") {
-    result = input * 9;
-    
-    const solution1 = `${input} ${from} = ${result} ${to} [Conversion Factor]`;
-    document.getElementById("output").innerHTML = solution1;
-
-    const solution2 = `1 ${from} means that the mass of 1000m length of yarn is 1gm.\n` +
-                      `1 ${to} means that the mass of 9000m length of yarn is 1gm.\n\n` +
-                      `According to the given input,\n` +
-                      `The mass of 1000m length of yarn is ${input}gm\n` +
-                      `The mass of 9000m length of yarn is ${result}gm\n\n` +
-                      `So, ${input} ${from} = ${result} ${to}`;
-    
-    document.getElementById("output").innerHTML += "<br><br>" + solution2;
-}
-      else if (from == "tex" && to == "grist") {
+    } else if (from == "tex" && to == "denier") {
+        result = input * 9;
+        document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Denier Count";
+    } else if (from == "tex" && to == "grist") {
         result = input * 0.029;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Jute Count or Grist";
     } else if (from == "tex" && to == "cotton") {

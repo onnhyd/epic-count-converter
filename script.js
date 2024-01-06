@@ -1,17 +1,16 @@
 function convert() {
-    const input = parseFloat(document.getElementById("input").value);
+    const input = document.getElementById("input").value;
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
 
-    if (!isNaN(input) && from && to) {
-        let result;
+    let result;
 
-        if (from == "tex" && to == "tex") {
+          if (from == "tex" && to == "tex") {
         result = input * 1;
-        document.getElementById("output").innerHTML = `${input} Tex Count = ${result.toFixed(2)} Tex Count`;
+        document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Tex Count";
     } else if (from == "tex" && to == "denier") {
         result = input * 9;
-        document.getElementById("output").innerHTML = `${input} Tex Count = ${result.toFixed(2)} Denier Count`;
+        document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Denier Count";
     } else if (from == "tex" && to == "grist") {
         result = input * 0.029;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Jute Count or Grist";
@@ -214,18 +213,19 @@ function convert() {
         document.getElementById("output").innerHTML = input + " Linen Count = " + result.toFixed(2) + " Woollen Count";
     }
 
-    } else {
+ else {
         document.getElementById("output").innerHTML = "Invalid input. Please try again.";
-        return;
     }
+}
 
-        if (result !== undefined) {
-            document.getElementById("output").innerHTML = `${input} ${from} = ${result.toFixed(2)} ${to}`;
-        } else {
-            document.getElementById("output").innerHTML = "Invalid conversion. Please try again.";
-        }
+    document.getElementById("output").innerHTML = generateOutput(input, from, to, result);
+}
+
+function generateOutput(input, from, to, result) {
+    if (result !== undefined) {
+        return `${input} ${from} = ${result.toFixed(2)} ${to}`;
     } else {
-        document.getElementById("output").innerHTML = "Invalid input. Please try again.";
+        return "Invalid input. Please try again.";
     }
 }
 

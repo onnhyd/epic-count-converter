@@ -3,10 +3,10 @@ function convert() {
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
 
-    if (input === "") {
-        console.log("No input value received.");
+    if (input === "" ) {
+        document.getElementById("output").innerHTML = "No input received. Please enter the count value.";
         return;
-        }
+    }
 
     let result;
     

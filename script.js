@@ -22,7 +22,7 @@ function convert() {
         
         According to the given input,<br>
         The mass of 1000m length of yarn is ${input}gm.<br>
-        The mass of 9000m length of yarn is  ÷ <sup>( ${input} × 9000 )</sup>&frasl;<sub>1000</sub> = ${result}gm.<br><br>
+        The mass of 9000m length of yarn is <sup>( ${input} × 9000 )</sup>&frasl;<sub>1000</sub> = ${result}gm.<br><br>
         
         So, ${input} Tex Count = ${result} Denier Count`;
     document.getElementById("output").innerHTML += "<br><br>" + solution2;

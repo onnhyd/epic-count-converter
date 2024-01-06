@@ -1,11 +1,12 @@
 function convert() {
-    const input = document.getElementById("input").value;
+    const input = parseFloat(document.getElementById("input").value);
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
 
-    let result;
+    if (!isNaN(input) && from && to) {
+        let result;
 
-    if (from == "tex" && to == "tex") {
+        if (from == "tex" && to == "tex") {
         result = input * 1;
         document.getElementById("output").innerHTML = `${input} Tex Count = ${result.toFixed(2)} Tex Count`;
     } else if (from == "tex" && to == "denier") {
@@ -218,8 +219,11 @@ function convert() {
         return;
     }
 
-    if (result !== undefined) {
-        document.getElementById("output").innerHTML = `${input} ${from} = ${result.toFixed(2)} ${to}`;
+        if (result !== undefined) {
+            document.getElementById("output").innerHTML = `${input} ${from} = ${result.toFixed(2)} ${to}`;
+        } else {
+            document.getElementById("output").innerHTML = "Invalid conversion. Please try again.";
+        }
     } else {
         document.getElementById("output").innerHTML = "Invalid input. Please try again.";
     }

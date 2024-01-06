@@ -2,10 +2,10 @@ function convert() {
     const input = document.getElementById("input").value;
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
-
+    
     let result;
-
-          if (from == "tex" && to == "tex") {
+    
+    if (from == "tex" && to == "tex") {
         result = input * 1;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Tex Count";
     } else if (from == "tex" && to == "denier") {
@@ -216,25 +216,4 @@ function convert() {
  else {
         document.getElementById("output").innerHTML = "Invalid input. Please try again.";
     }
-}
-
-    document.getElementById("output").innerHTML = generateOutput(input, from, to, result);
-}
-
-function generateOutput(input, from, to, result) {
-    if (result !== undefined) {
-        return `${input} ${from} = ${result.toFixed(2)} ${to}`;
-    } else {
-        return "Invalid input. Please try again.";
-    }
-}
-
-document.getElementById("toggleButton").addEventListener("click", toggleDarkMode);
-
-function toggleDarkMode() {
-    const body = document.body;
-    const contentWrapper = document.querySelector(".content-wrapper");
-
-    body.classList.toggle("dark-mode");
-    contentWrapper.classList.toggle("dark-mode");
 }

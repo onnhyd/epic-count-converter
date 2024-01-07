@@ -111,6 +111,7 @@ box-shadow:
     display:flex;
     align-items: center;
     justify-content: center;
+    font-weight: normal;
     /* margin-left: 150px;
     padding-left: 80px; */
 }

@@ -3,8 +3,8 @@ function convert() {
     const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
 
-    if (input === "" ) {
-        document.getElementById("output").innerHTML = "No input received. Please enter the count value.";
+    if (input === "" || input == 0) {
+        document.getElementById("output").innerHTML = "No input received.<br>Please enter the count value.";
         return;
     }
 
@@ -234,6 +234,6 @@ function convert() {
     }
 
  else {
-        document.getElementById("output").innerHTML = "Invalid input. Please try again.";
+        document.getElementById("output").innerHTML = "Invalid input.<br>Please try again.";
     }
 }

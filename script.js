@@ -7,6 +7,10 @@ function convert() {
         document.getElementById("output").innerHTML = "No input received.<br>Please enter the count value.";
         return;
     }
+else if (input < 0) {
+        document.getElementById("output").innerHTML = "Count value can not be negetive.<br>Please enter a positive count value.";
+        return;
+    }
 
     let result;
     

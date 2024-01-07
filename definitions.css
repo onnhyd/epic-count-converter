@@ -24,3 +24,29 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+h1, h2 {
+    margin: 20px;
+    color: #336699;
+}
+
+b {
+    color: #0066cc;
+    
+}
+
+p {
+    margin: 20px;
+}
+
+ul, ol {
+    margin: 20px;
+}
+
+li {
+    margin-left: 25px;
+}

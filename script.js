@@ -35,8 +35,18 @@ else if (input < 0) {
         The mass of 9000m length of yarn is ( ${input} × 9000 ) ÷ 1000 = ${result}gm.<br><br>
         
         So, ${input} Tex Count = ${result} Denier Count`;
+   
+   const solution4 = `Solution - 3 :<br>
+        For Direct System, C = (W × l) ÷ L<br><br>
 
-    const finalSolution = solution1 + "<br><br>" + solution2 + "<br><br>" + solution3;
+        Here, C = Yarn Count<br>
+              W = Mass of yarn sample in the unit of the system = ${input}gm<br>
+              L = Length of yarn sample in the unit of the system = 1000m<br>
+              l = Unit of length of the system = 9000m<br><br>
+
+        So, Denier Count = ( ${input} × 9000 ) ÷ 1000 = ${result}`;
+
+    const finalSolution = solution1 + "<br><br>" + solution2 + "<br><br>" + solution3 + "<br><br>" + solution4;
     document.getElementById("output").innerHTML = finalSolution;
     } else if (from == "tex" && to == "grist") {
         result = input * 0.029;

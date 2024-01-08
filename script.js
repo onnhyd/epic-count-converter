@@ -22,11 +22,11 @@ else if (input < 0) {
 
     const solution1 = `${input} Tex Count = ${result} Denier Count`;
     
-    const solution2 = `Solution - 1 :<br>
+    const solution2 = `Solution - 1 :<br><br>
         1 Tex Count = 9 Denier Count [Conversion Factor]<br>
         ${input} Tex Count = ${result} ( ${input} × 9 ) Denier Count`;
 
-    const solution3 = `Solution - 2 :<br>
+    const solution3 = `Solution - 2 :<br><br>
         1 Tex Count means that the mass of 1000m length of yarn is 1gm.<br>
         1 Denier Count means that the mass of 9000m length of yarn is 1gm.<br><br>
         
@@ -36,10 +36,10 @@ else if (input < 0) {
         
         So, ${input} Tex Count = ${result} Denier Count`;
    
-   const solution4 = `Solution - 3 :<br>
+   const solution4 = `Solution - 3 :<br><br>
         For Direct System, C = (W × l) ÷ L<br><br>
 
-        Here, C = Yarn Count<br>
+        Here, C = Yarn Count = Denier Count<br>
               W = Mass of yarn sample in the unit of the system = ${input}gm<br>
               L = Length of yarn sample in the unit of the system = 1000m<br>
               l = Unit of length of the system = 9000m<br><br>

@@ -20,12 +20,13 @@ else if (input < 0) {
     } else if (from === "tex" && to === "denier") {
     result = input * 9;
 
-    const solution1 = `Solution - 1 :<br>
+    const solution1 = `${input} Tex Count = ${result} Denier Count`;
+    
+    const solution2 = `Solution - 1 :<br>
         1 Tex Count = 9 Denier Count [Conversion Factor]<br>
         ${input} Tex Count = ${result} ( ${input} × 9 ) Denier Count`;
-    document.getElementById("output").innerHTML = solution1;
 
-    const solution2 = `Solution - 2 :<br>
+    const solution3 = `Solution - 2 :<br>
         1 Tex Count means that the mass of 1000m length of yarn is 1gm.<br>
         1 Denier Count means that the mass of 9000m length of yarn is 1gm.<br><br>
         
@@ -34,7 +35,9 @@ else if (input < 0) {
         The mass of 9000m length of yarn is ( ${input} × 9000 ) ÷ 1000 = ${result}gm.<br><br>
         
         So, ${input} Tex Count = ${result} Denier Count`;
-    document.getElementById("output").innerHTML += "<br><br>" + solution2;
+
+    const finalSolution = solution1 + "<br><br>" + solution2 + "<br><br>" + solution3;
+    document.getElementById("output").innerHTML = finalSolution;
     } else if (from == "tex" && to == "grist") {
         result = input * 0.029;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Jute Count or Grist";

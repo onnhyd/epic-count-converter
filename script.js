@@ -18,7 +18,8 @@ else if (input < 0) {
         result = input * 1;
         document.getElementById("output").innerHTML = input + " Tex Count = " + result.toFixed(2) + " Tex Count";
     } else if (from === "tex" && to === "denier") {
-    result = input * 9;
+    let result = input * 9;
+    result = result.toFixed(2);
 
     const solution1 = `${input} Tex Count = ${result} Denier Count`;
     

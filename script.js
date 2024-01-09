@@ -24,7 +24,7 @@ else if (input < 0) {
     const solution1 = `${input} Tex Count = ${result} Denier Count`;
     
     const solution2 = `Solution - 1 :<br><br>
-        1 Tex Count = 9 Denier Count [Conversion Factor]<br>
+        Denier Count = 9 × Tex Count [Conversion Factor]<br>
         ${input} Tex Count = ${result} ( ${input} × 9 ) Denier Count`;
 
     const solution3 = `Solution - 2 :<br><br>

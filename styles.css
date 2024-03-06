@@ -1,163 +1,143 @@
-@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
-/* .body{
-    background-color: rgb(201, 143, 56);
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-} */
+:root {
+  --primary-background-color: #f4f4f4;
+  --primary-text-color: #333;
+  --secondary-background-color: #fff;
+  --button-background-color: #017afe;
+  --button-text-color: #fff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.content-wrapper{
-    background-color: rgb(255, 255, 255);
-    /* background-color:#017afe; */
-    font-family: 'Red Hat Display', sans-serif;
-    /* background-color:rgb(100, 182, 182); */
-    border-radius:20px;
-    /* margin: 20px;
-    padding: 20px; */
-    /* background-color: rgb(149,86,55); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.form-wrapper{
-    
-    background: rgba(255, 255, 255, 0.41);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.1px);
-    -webkit-backdrop-filter: blur(8.1px);
-    width: auto;
-    
-    font-size: 20px;
-    border-radius:20px;
-    /* background-color: aqua; */
-    padding-top:50px;
-    padding-left: 100px;
-    padding-right: 100px;
-   
+.content-wrapper {
+  background-color: var(--secondary-background-color);
+  font-family: 'Red Hat Display', sans-serif;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-wrapper input{
-    
-    /* background-color: rgb(148,131,86); */
-    /* height:30px; */
-    padding: 10px;
-    
-    border-radius: 30px;
-    font-size: 15px;
-    width:300px;
-    
-    
-}
-.convert-button{
-    border:none;
-    /* background-color:aliceblue; */
-    /* background-color:  rgb(39,29,20); */
-    background-color: #017afe;
-    width: 90%;
-    /* width :90px; */
-    /* height:40px; */
-    border-radius: 10px;
-    font-size: 20px;
-    color: white;  
-    padding: 8px;  
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  width: auto;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.convert-button-wrapper{
-    padding-top: 20px;
-    /* background-color: blue; */
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    
-    
+.form-wrapper input {
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  width: 300px;
 }
-/* .from-input-wrapper option{
-    background-color: black;
-    
-} */
 
+.convert-button {
+  border: none;
+  background-color: var(--button-background-color);
+  width: 90%;
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--button-text-color);
+  padding: 8px;
+}
+
+.convert-button:hover {
+  cursor: pointer;
+}
+
+.convert-button-wrapper {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
 select {
-font-size: 15px;
-/* background-color: rgb(148,131,86); */
-border-radius: 30px;
-width:320px;  
-
-padding: 10px;
-
-color: #333;
+  font-size: 15px;
+  border-radius: 30px;
+  width: 320px;
+  padding: 10px;
+  color: #333;
 }
 
-.form-wrapper:hover{
-    box-shadow: 
-    -10px -10px 15px rgba(219, 205, 205, 0.5),
-    10px 10px 15px rgba(70,70,70,0.12);
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+  .form-wrapper {
+    font-size: 20px;
+  }
 }
-.convert-button:hover{
-cursor: pointer;
-box-shadow: 
-    -1px -1px 15px rgba(255,255,255,0.5),
-    10px 10px 15px rgba(70,70,70,0.12);  
-}
-#output{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-left: 150px;
-    padding-left: 80px; */
-}
-.form-wrapper input:hover{
-    cursor: pointer;
-}
-select:hover{
-    cursor: pointer;
-}
-@media(max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/    
-    h1{
-        font-size:25px;
-        /* color: green; */
-    }
-    .form-wrapper{
-        /* font-size: 20px; */
-        font-size: 20px;
-    }
-   
-    
-}
+
 nav {
-    background-color: #017afe;
-    overflow: hidden;
+  background-color: var(--button-background-color);
+  overflow: hidden;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: var(--button-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .dark-mode {
-    background-color: #333;
-    color: #fff;
+  --primary-background-color: #333;
+  --primary-text-color: #fff;
+  --secondary-background-color: rgba(255, 255, 255, 0.41);
+  --button-background-color: #fff;
+  --button-text-color: #333;
+}
+
+.dark-mode nav {
+  background-color: #333;
 }
 
 .dark-mode nav a {
-    color: #fff;
+  color: #fff;
+}
+
+.dark-mode .form-wrapper {
+  background: rgba(255, 255, 255, 0.41);
+}
+
+.dark-mode .convert-button {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode .form-wrapper:hover {
+  box-shadow: -10px -10px 15px rgba(219, 205, 205, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.dark-mode .convert-button:hover {
+  cursor: pointer;
+  box-shadow: -1px -1px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.dark-mode select:hover,
+.dark-mode .form-wrapper input:hover {
+  cursor: pointer;
 }

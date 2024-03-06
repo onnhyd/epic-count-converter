@@ -45,15 +45,6 @@ body {
    
 }
 
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode nav a {
-    color: #fff;
-}
-
 .form-wrapper input{
     
     /* background-color: rgb(148,131,86); */
@@ -160,4 +151,13 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode nav a {
+    color: #fff;
 }

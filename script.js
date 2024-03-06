@@ -1,3 +1,10 @@
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+
 function convert() {
     const input = document.getElementById("input").value;
     const from = document.getElementById("from").value;

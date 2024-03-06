@@ -24,10 +24,6 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
-body {
-    font-family: Arial, sans-serif;
-    
-}
 
 h1, h2 {
     margin: 20px;
@@ -36,7 +32,6 @@ h1, h2 {
 
 b {
     color: #0066cc;
-    
 }
 
 p {
@@ -49,4 +44,42 @@ ul, ol {
 
 li {
     margin-left: 25px;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+nav.dark-mode {
+    background-color: #444;
+}
+
+nav.dark-mode a {
+    color: #ddd;
+}
+
+nav.dark-mode a:hover {
+    background-color: #666;
+    color: white;
+}
+
+h1, h2.dark-mode {
+    color: #b3b3b3;
+}
+
+b.dark-mode {
+    color: #80bfff;
+}
+
+p.dark-mode {
+    color: #ccc;
+}
+
+ul.dark-mode, ol.dark-mode {
+    color: #ccc;
+}
+
+li.dark-mode {
+    color: #ccc;
 }

@@ -1,73 +1,71 @@
+:root {
+  --primary-background-color: #f4f4f4;
+  --primary-text-color: #333;
+  --secondary-background-color: #fff;
+  --button-background-color: #017afe;
+  --button-text-color: #fff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav {
-    background-color: #017afe;
-    overflow: hidden;
+  background-color: var(--button-background-color);
+  overflow: hidden;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: var(--button-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
-h1 {
-    color: #333;
-  }
-  
-  p {
-    line-height: 1.5;
-    color: #666;
-  }
-  
-  .developer {
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .developer img {
-    max-width: 100px;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-  }
 
-  .social-icons a {
-    margin-right: 10px;
-    color: #333;
-  }
-  
-  .thank-you {
-    margin-top: 30px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .thank-you img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
+h1 {
+  color: var(--primary-text-color);
+}
+
+p {
+  line-height: 1.5;
+  color: #666;
+}
+
+.developer,
+.thank-you {
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer img,
+.thank-you img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: var(--primary-text-color);
+}

@@ -44,6 +44,18 @@ body {
     padding-right: 100px;
    
 }
+
+@media only screen and (max-width: 600px) {
+    .content-wrapper {
+        margin: 10px; /* Adjusted margin for smaller devices */
+    }
+
+    .form-wrapper {
+        font-size: 16px; /* Adjusted font size for smaller devices */
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
 .form-wrapper input{
     
     /* background-color: rgb(148,131,86); */

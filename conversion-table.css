@@ -6,9 +6,18 @@ body {
     color: #333;
 }
 
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
 nav {
     background-color: #017afe;
     overflow: hidden;
+}
+
+nav.dark-mode {
+    background-color: #444;
 }
 
 nav a {
@@ -23,4 +32,13 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+nav.dark-mode a {
+    color: #f4f4f4;
+}
+
+nav.dark-mode a:hover {
+    background-color: #666;
+    color: white;
 }

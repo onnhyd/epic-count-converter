@@ -45,6 +45,15 @@ body {
    
 }
 
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode nav a {
+    color: #fff;
+}
+
 .form-wrapper input{
     
     /* background-color: rgb(148,131,86); */

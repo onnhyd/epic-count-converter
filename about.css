@@ -120,6 +120,9 @@ nav.dark-mode a:hover {
     height: 55px;
     background-image: url('light-mode-image.png');
     background-size: cover;
+    border-radius: 25px;
+    border: none;
+    outline: none;
 }
 
 .dark-mode #dark-mode-toggle {

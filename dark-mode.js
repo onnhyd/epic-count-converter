@@ -3,11 +3,13 @@ const isDarkMode = localStorage.getItem('darkMode') === 'true';
 function enableDarkMode() {
   document.body.classList.add('dark-mode');
   localStorage.setItem('darkMode', 'true');
+  darkModeToggleButton.style.backgroundImage = "url('dark-mode-image.png')";
 }
 
 function disableDarkMode() {
   document.body.classList.remove('dark-mode');
   localStorage.setItem('darkMode', 'false');
+  darkModeToggleButton.style.backgroundImage = "url('light-mode-image.png')";
 }
 
 function toggleDarkMode() {

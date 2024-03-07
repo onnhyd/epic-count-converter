@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="stylesheet" href="about.css">
+  <style>
+    #dark-mode-toggle {
+      position: fixed;
+      bottom: 20px; /* Adjust this value to change the distance from the bottom */
+      left: 20px; /* Adjust this value to change the distance from the left */
+      z-index: 999; /* Ensure it's above other elements */
+    }
+  </style>
 </head>
 
 <body>
@@ -33,7 +41,7 @@
     </div>
   </div>
 
-<div class="developer">
+  <div class="developer">
     <img src="developer2.jpg" alt="Developer 2">
     <h2>Dhananjoy Dey</h2>
     <p>B.Tech student at Department of Jute and Fibre Technology, University of Calcutta (2020-24)</p>
@@ -61,6 +69,7 @@
     <p>We express our sincere gratitude to Prof. Asis Mukherjee, our esteemed faculty member, for his invaluable teachings and guidance throughout the course of this project. It is through his expertise and support that we have acquired the knowledge and skills necessary to successfully complete this endeavor. Without his dedicated mentorship, our achievements in this project would not have been possible.</p>
   </div>
   <script src="dark-mode.js"></script>
-  <button id="dark-mode-toggle" onclick="toggleDarkMode()"></button>
+  <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 </body>
+
 </html>

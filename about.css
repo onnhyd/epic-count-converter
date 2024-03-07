@@ -114,3 +114,14 @@ nav.dark-mode a:hover {
 .thank-you.dark-mode img {
     border: 2px solid #f4f4f4;
 }
+
+#dark-mode-toggle {
+    width: 50px;
+    height: 50px;
+    background-image: url('light-mode-image.png');
+    background-size: cover;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-image: url('dark-mode-image.png');
+}
